@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" action="table1.html">
+        <fieldset>
+            <legend align="center">My Registration Form</legend>
+            <label>First Name <b>:</b>
+                <input type="text" placeholder="Enter Your First Name" name="fn" required minlength="4" maxlength="7" autofocus>
+            </label>
+            <br><br>
+            <label>Last Name <b>:</b>
+                <input type="text" placeholder="Enter Your Last Name" name="ln" minlength="4" maxlength="7">
+            </label>
+            <br><br>
+            <label>Email :
+                <input type="email" placeholder="Enter Email">
+            </label>
+            <br><br>
+            <label>Phone no. :
+                <input type="tel" placeholder="Enter mobile number">
+            </label>
+            <br><br>
+            <label>Password :
+                <input type="password" placeholder="Password">
+            </label>
+            <br><br>
+            <label>Age :
+                <input type="number" min="16" max="120" value="18">
+            </label> 
+            <br><br>
+            <label>DOB :
+                <input type="date" min="2007-01-01" max="2025-09-24">
+            </label>
+            <br><br>
+            <label>TOB :
+                <input type="time">
+            </label>
+            <br><br>
+            <label>Favourite color :
+                <input type="color" value="#0fab34">
+            </label>
+            <br><br>
+            <label>Profile Photo :
+                <input type="file" accept=".jpg,.gif,.jpeg,.png,.jfif" multiple>
+            </label>
+            <br><br>
+            <!-- also write <input type="hidden"> -->
+            <label>University Name : 
+                <input type="text" placeholder="Enter University Name" name="uni" od="T4" required disabled value="LJKU">
+            </label>
+            <!-- data sent to server || data visible to client
+            hidden         O                     X
+            readonly       O                     O
+            disable        X                     O              -->
+            <br><br>
+             <label>Price
+                <input type="range" min="0" max="5000" value="4000">
+            </label>
+            <br><br>
+            <table>
+                <tr>
+                    <td>
+                        <label>
+                            Gender :
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="radio" name="a" value="male" checked> Male
+                        </label>
+                        <br><br>
+                        <label>
+                        <input type="radio" name="a" value="female"> Female
+                        </label>
+                        <br><br>
+                        <label>
+                        <input type="radio" name="a" value="do not disclose"> Do Not disclose
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <table>
+                <tr>
+                    <td >
+                        <label>
+                            HOBBIES :
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="b" value="male" checked> Traveling
+                        </label>
+                        <br><br>
+                        <label>
+                        <input type="checkbox" name="b" value="female"> swimming
+                        </label>
+                        <br><br>
+                        <label>
+                        <input type="checkbox" name="b" value="do not disclose"> Reading
+                        </label>
+                        <br><br>
+                        <label>
+                        <input type="checkbox" name="b" value="do not disclose"> Netflix
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <label>Adress :
+                <textarea placeholder="Enter Address" rows="1" cols="30">
+                </textarea>
+            </label>
+            <br><br>
+            <label>City : 
+                <select>
+                    <option disabled hidden selected>---Select City---</option>
+                    <optgroup label="Gujarat">
+                    <option>ahmedabad</option>
+                    <option>surat</option>
+                    <option>Gandhinagar</option>
+                    </optgroup>
+                    <optgroup label="Maharastra">
+                        <option>Mumbai</option>
+                        <option>Pune</option>
+                    </optgroup>
+                </select>
+            </label>
+            <br><br>
+            <label>Browsers :
+                <input type="text" list="Browsers" name="br">
+            </label>
+            <datalist id="Browsers">
+                <option value="chrome">
+                <option value="Firefox">
+                <option value="Tor">
+                <option value="edge">
+                </datalist>
+            <br><br>
+            <label>
+                <input type="submit">
+            </label>
+            <label>
+                &nbsp;<input type="button" value="click">
+            </label>
+            <label>
+                &nbsp;<input type="reset">
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>

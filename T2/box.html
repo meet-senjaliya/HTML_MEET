@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*1) border : width style color 
+                or 
+        border-width :
+        border-style :solid | dotted | dashed | double | inset | outset | groove | ridge
+                      : T - R - B - L
+                      :T - R,L - B
+                      :T,B - R,L
+        border-color :*/
+        /*2) border-radius : px | % | em | rem
+        border-radius : TopLeft - TopRight - Bottom Right - BottomLeft*/
+        /*3) height : px | % | em | rem*/
+        /*4) width : px | % | em | rem*/
+        /*5) padding : px | % | em | rem*/
+        /*6) margin : px | % | em | rem*/
+        /*7) box-sizing : content-box | border-box*/
+        /*8) box-shadow : h-offset v-offset blur color*/
+        #a
+        {
+            font-size: 40px;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            line-height: 200px;
+            border-width: 20px;
+            border: 3px solid red; 
+            border-color: aliceblue black darkgoldenrod gold;
+            border-style: solid dashed groove dotted;
+            border-width: 4px 10px 15px 25px;
+            border-radius: 20px 0px 20px 0px;
+            box-shadow: 10px 10px 10px 10px  grey;
+        }
+        #b,#c
+        {
+            height: 50px;
+            width: 50px;
+            font-style: 20px;
+            border: 2px solid green;
+        }
+        #b
+        {
+            margin: 20px;
+            padding: 10px 20px;
+        }
+        #c
+        {
+            margin-left: 90px;
+            margin-top: -74px;
+        }
+        #d
+        {
+            height: 200px;
+            width: 400px;
+            border: 2px solid green;
+        }
+        #e
+        {
+            height: 200px;
+            width: 400px;
+            padding: 50px;
+            border: 2px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">Hello</div>
+    <div id="b">1</div>
+    <div id="c">2</div>
+    <div id="d">d</div>
+    <div id="e">e</div>
+</body>
+</html>

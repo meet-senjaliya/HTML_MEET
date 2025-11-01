@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Pseudo class selector*/
+        /*1. unvisited link*/
+        a:link
+        {
+            font-size: 50px;
+            color: green;
+            background-color: lightgreen;
+        }
+        a:visited
+        {
+            color: gold;
+            background-color: black;
+        }
+        a:hover
+        {
+            font-size: 100px
+        }
+        a:active
+        {
+            color: pink;
+            background-color: magenta;
+        }
+        h1:hover
+        {
+
+            font-size: 20px;
+        }
+        h1{
+            transition: all 2s;
+        }
+        p:nth-child(2)
+        {
+            color: green;
+        }
+        input:focus
+        {
+            background-color: yellow;
+            color: yellow;
+        }
+        /*2. pseudo element selector*/
+        p::first-line
+        {
+            color: blue;
+        }
+        #a::first-line
+        {
+            color: cadetblue;
+        }
+        #a::first-letter
+        {
+            color: red;
+            background-color: yellow;
+            font-size: 40px;
+        }
+        h1::after
+        {
+            content : url(big.jpg);
+            color: purple;
+        }
+        p::selection
+        {
+            background-color: black;
+            color: cyan;
+            font-size:30px;
+        }
+        ::marker
+        {
+            color: aqua;
+            font-size: 70px;
+        }
+        ul,ol
+        {
+            margin: 40px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">link 1</a>
+    <br>
+    <a href="##">link 2</a>
+    <br>
+    <a href="###">link 3</a>
+    <h1>Hellooooooooooooo....</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eligendi explicabo accusantium voluptates nesciunt molestias ullam necessitatibus, laudantium dolorem in?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aperiam quisquam doloremque consectetur nobis maxime cumque unde, ullam inventore modi, dolorem repudiandae eveniet dolore voluptatibus culpa tempore rem incidunt? Quas!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus in voluptatibus illo veritatis aspernatur nisi perspiciatis, consequatur quisquam nemo! Magni voluptate debitis ipsa eius ratione dolor sequi, fugit consectetur commodi minima reiciendis quas consequatur dolores quasi vel harum ducimus.</p>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit commodi soluta error enim. Reprehenderit minus dicta aspernatur. Nisi, itaque illum.</p>
+    <form>
+        First name
+        <input type="text" placeholder="Enter name">
+    </form>
+    <p id="a">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente laborum tempora inventore modi repellendus reiciendis numquam sunt architecto illo enim possimus doloribus consequuntur rerum autem commodi, earum voluptas recusandae tenetur minus, delectus animi fugiat soluta aliquam asperiores? Sequi dolorem distinctio excepturi laboriosam eos accusantium quo labore hic alias libero quam aut id culpa, maiores quaerat, unde ipsum beatae dignissimos atque tenetur in? Ratione nobis explicabo assumenda ab aliquam iste? Repellendus cupiditate quam accusamus tenetur. Amet dicta velit sint accusantium quod esse recusandae quos culpa aliquid beatae, debitis quas accusamus ad aperiam ipsum nihil ex praesentium dolorum officia veritatis maiores soluta.</p>
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ol>
+    <ul>
+        <li>d</li>
+        <li>e</li>
+        <li>f</li>
+    </ul>
+</body>
+</html>

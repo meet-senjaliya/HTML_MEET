@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            border: 2px solid black;
+            width: auto;
+            padding: 10px;
+        }
+        #i
+        {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+        .c
+        {
+            margin: 20px;
+            text-decoration: none;
+            font-size: 22px;
+        }
+        @media (max-width:800px)
+        {
+            .c
+            {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- given a horizontal menu with image icon,home about us contact us, as soon as the screen size gose less than 800 px the menu item must apper verticaly -->
+     <div>
+         <img src="big.jpg" id="i" alt="#" >
+         <a href="#" class="c">Home</a>
+         <a href="#" class="c">About Us </a>
+         <a href="#" class="c">Contact us</a>
+     </div>
+</body>
+</html>

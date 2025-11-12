@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            display: flex;
+            flex-direction: column ;
+            gap: 20px;
+        }
+        #i1
+        {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+        #i2
+        {
+            height: 200px;
+            width: 200px;
+            opacity: 70%;
+            transition: all 3s;
+        }
+        #i2:hover
+        {
+            transform: scaleX(-1);
+        }
+
+        /*3. resposible image*/
+        #i3
+        {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /*4. Thumbnail Image*/
+        #i4
+        {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        #i4:hover
+        {
+            box-shadow: 5px 5px 5px grey;
+        }
+
+        /*5. Text on image*/
+        #p5
+        {
+            height: 200px;
+            width: 200px;
+            position: relative;
+        }
+        #i5
+        {
+            height: 200px;
+            width: 200px;
+            opacity: 0.5;
+            position: absolute;
+        #r
+        {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <img src="big.jpg" id="i1" alt="#" >
+    <img src="big.jpg" id="i2" alt="#" >
+    <img src="big.jpg" id="i3" alt="#" >
+    <img src="big.jpg" id="i4" alt="#" >
+    <div id="p5">
+        <img src="big.jpg" id="i5" alt="#" >
+        <div id="l">Hello left</div>
+        <div id="r">Hello right</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+        p
+        {
+            text-align: justify;
+        }
+        /*responsive with respect to
+        1. type of device : screen | screen-readers
+
+        2. size of device : min-width | max-width | min-height | max-height
+        
+        3. oreantation : potrait | landscap*/
+        /*SYNTAX : @media not/only device and/or (query1) and/or (quary2)*/
+        @media screen 
+        {
+            #d
+            {
+                background-color: yellow;
+                border: 10px solid red;
+                padding: 20px;
+            }   
+            h1
+            {
+                color: blue;
+            }
+            p
+            {
+                color: green;
+            }
+        }
+        @media print
+        {
+            #d
+            {
+                background-color: aqua;
+                border: 10px dashed blue;
+                font-size: 30px;
+            }
+            h1
+            {
+                color: red;
+            }
+        }
+        @media (orientation: portrait)
+        {
+            #d
+            {
+                background-color: pink;
+                border: 10px dashed red;
+                padding: 5px;
+            }
+        }
+        /*@media (min-width:600px)
+        {
+            #d
+            {
+                background-color: lime;
+                border: 10px solid green;
+            }
+        }*/
+        @media (max-width:600px)
+        {
+            #d
+            {
+                background-color: lime;
+                border: 10px solid green;
+            }
+        }
+        @media only screen and (min-width:600px) and (max-width:900px)
+        {
+            #d
+            {
+                background-color: magenta;
+                border: 10px solid purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="d">
+        <h1>Media Demo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eos eveniet consequatur quaerat soluta dolorum eum fugit quo ea officiis totam minus recusandae aliquid alias quidem minima magnam culpa, a eligendi distinctio ullam iusto suscipit voluptate sunt? Eligendi voluptatem et a rem sint! Facere quam iste hic illum ad ut fuga sequi maiores earum nihil incidunt neque quidem error repellat modi eveniet necessitatibus quae, sunt tempore minus quas dolores molestias? Blanditiis recusandae vero odio esse repellat error enim optio voluptas cupiditate, porro velit fugit ducimus. Doloribus ipsa deserunt veritatis mollitia! Deleniti quos possimus esse repudiandae maxime, saepe, velit eligendi cupiditate cum similique impedit, autem neque accusantium atque sequi doloremque? Ut a similique eos minus reprehenderit vitae rerum impedit libero, ipsa pariatur sunt eveniet optio doloribus, amet nam! Nulla, debitis. Voluptas non excepturi ipsum. Inventore facilis enim debitis illo exercitationem, nulla quod nam aliquam similique in odit magnam! Recusandae neque voluptate optio at, dolore magnam, corrupti labore ipsum dolorem modi, assumenda animi vero eius commodi adipisci! Saepe est amet nam accusamus distinctio ea porro ipsam at nemo suscipit nulla, odio obcaecati, veritatis minima temporibus delectus, asperiores iusto autem cupiditate incidunt dolor voluptatibus unde dolorem necessitatibus? Aliquam, voluptatum quam nesciunt ipsa debitis deserunt ex, minus praesentium dignissimos consequuntur nulla magni laudantium. Nemo facere modi vero unde. Voluptates qui earum nostrum voluptas accusantium commodi dicta consequuntur doloribus. Commodi modi in nisi quo asperiores ipsam maiores dignissimos dolores perspiciatis voluptatum! Consequuntur et odit, soluta adipisci est, esse fugit ipsam dolore quia consequatur ex quasi. Porro omnis aliquid blanditiis similique quam eum nobis enim maiores est et ut distinctio quod provident error architecto nam quidem, rem deserunt quos! Neque distinctio incidunt soluta maxime inventore repudiandae iure dolorum ex, nisi accusantium. Non perferendis delectus iure tenetur, suscipit fugiat quaerat voluptates ex eos numquam porro modi nostrum fugit eius recusandae aperiam. Illum quaerat sit libero repellendus fugiat, aspernatur repudiandae velit odio, in atque ab at architecto dolores quo! Cumque tenetur, architecto quas deserunt repellat assumenda placeat, cupiditate quo totam ratione aperiam veritatis error rerum debitis sequi accusantium libero voluptate id culpa ea harum. Provident nisi nam rerum inventore, eius, dolorem totam unde libero expedita commodi quam quos eaque quia obcaecati praesentium aut architecto esse sit dolore perferendis. Non quas corrupti dolor sapiente aut hic, doloremque illo, earum eos voluptate impedit adipisci rem ea natus. Repudiandae ea fuga ad totam nulla tenetur commodi saepe qui. Repellendus accusamus consequuntur numquam, enim animi quod tenetur, voluptas iure exercitationem deserunt saepe quisquam cumque amet id. Tenetur eum, repudiandae dolores dolorum earum, voluptas non, atque voluptatem nam ipsum sint quia quae voluptatibus ut labore temporibus eos cum? Dolores ducimus odit pariatur expedita exercitationem ad iusto reprehenderit consequuntur commodi quod. Animi velit rem omnis minima excepturi. Iure sed eaque consectetur ab, obcaecati consequuntur facilis cumque pariatur a voluptatum perspiciatis nihil sapiente ullam molestiae quidem repellat suscipit, error ducimus saepe repudiandae quos omnis vel neque! Voluptatum reprehenderit nostrum aut ipsam alias excepturi vitae corrupti. Natus corrupti reiciendis consequuntur libero nesciunt, mollitia pariatur! Temporibus, expedita!</p>
+    </div>
+</body>
+</html>

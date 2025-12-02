@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 
+    .alert
+    .alert-* -->
+    <div class="container mt-3">
+        <div class="alert alert-primary alert-dismissible">
+            Black Friday Sale live <a href="#" class="alert-link">here</a>
+            <button class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+    <!-- bs buttons 
+     btn
+     btn-*-->
+    <div class="container mt-3">
+        <button class="btn btn-primary">
+            click me
+        </button>
+        <a href="#" class="btn btn-success">click me</a>
+        <input type="button" value="click me" class="btn btn-danger">
+
+        <br><br>
+
+        <button class="btn btn-outline-primary active" >
+            click me
+        </button>
+        <a href="#" class="btn btn-outline-success btn-sm disabled" >click me</a>
+        <input type="button" value="click me" class="btn btn-outline-danger btn-lg">
+        <br><br>
+        <div class="container mt-3">
+            <button class="btn btn-secondary w-100 ">click me</button>
+        </div>
+    </div>
+    </div>
+
+    <!-- bs dropdown -->
+    <div class="container mt-3">
+        <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">syllabus</button>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="#" class="dropdown-item active">FSD-1</a>
+            </li>
+            <li>
+                <a href="#" class="dropdown-item disabled">FCSP-1</a>
+            </li>
+            <li>
+                <a href="#" class="dropdown-item">PS</a>
+            </li>
+            <li>
+                <a href="#" class="dropdown-item">DE</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <br><br>
+    <div class="container mt-3">
+        <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">syllabus</button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-header">
+                sem-3
+            </li>
+            <li>
+                <a href="#" class="dropdown-item ">FSD-1</a>
+            </li>
+            <li class="dropdown-divider">
+            </li>
+            <li>
+                <a href="#" class="dropdown-item">DE</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>

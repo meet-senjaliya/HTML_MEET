@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // 1) if
+        let loogedin = true;
+        if (loogedin) {
+            console.log("welcom")
+        }
+
+
+        // 2) if...else
+        let age = 18;
+        if (age >= 18) {
+            console.log("you can vote");
+        }
+        else {
+            console.log("you have to wait");
+        }
+
+
+        // 3) if...elseif
+        let marks = 87;
+        if(marks >= 90)
+        {
+            console.log("grade is A");
+        }
+        else if(marks >= 70)
+        {
+            console.log("grade is B");
+        }
+        else
+        {
+            console.log("grade is C");
+        }
+
+
+        // 4) switch...case
+        let user = "viw ";
+        switch(user)
+        {
+            case "admin" : console.log("full access");
+            break;
+
+            case "editor" : console.log("edit access");
+            break;
+
+            case "viwer" : console.log("read only");
+            break;
+            
+            default: console.log("no access");
+        }
+
+
+        // 5) Ternary
+        let age1 = 20;
+        let result = age1>18? "adult":"minor";
+        console.log(result);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

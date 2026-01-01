@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showmsg(a) {
+            document.write("value is " + a);
+        }
+        function showmsg(a,b) {
+            document.write("value is " + (a+b));
+        }
+
+        // 2) function called explicitly from js code
+        // function add(a, b) {
+        //     return a + b;
+        // }
+        // let result = add(2, 5);
+        // console.log(result)
+
+
+        // 3) automatically execute(selfinvoke)
+        // (function () {
+        //     document.write("self invoking");
+        // })();
+    </script>
+</head>
+
+<body>
+    <input type="button" value="click here" onclick="showmsg(2)">
+</body>
+
+</html>

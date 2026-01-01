@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script>
+        // 1) alert
+        function warn() {
+            alert("This is a warning messsage");
+            document.write("warning");
+        }
+
+        // 2) confirmation
+        function conf() {
+            res = confirm("Do you want to continue");
+            if (res == true) {
+                document.write("user wants to continue");
+                return True;
+            }
+            else
+            {
+                document.write("Quit");
+                return false;
+            }
+        }
+
+
+        // 3) prompt
+        function getval()
+        {
+            var res = prompt("Enter user name ","your user name here");
+            document.write("Hello "+res);
+        }
+    </script> -->
+
+
+    <!-- 566) Write a JavaScript program that first uses the alert box to display a welcome message to the 
+user (Example: Welcome User). Then, use the confirm box to ask the user if they want to 
+continue.  
+
+1. If the user clicks "OK", proceed to ask for their name using the prompt box and 
+display a personalized greeting (Example: If user enters “Jack”, then display “Hello 
+Jack”). After displaying the greeting using alert box, prompt the user to enter their 
+age.  
+
+Based on the user's age, use a conditional statement to check if they are 18 or older. 
+If the user is 18 or older, display an alert saying "You are an adult!". If the user is 
+under 18, display an alert saying "You are a minor!".  
+2. If the user clicks "Cancel" in the confirm box at the beginning, display an alert saying 
+"Goodbye". -->
+
+    <!-- <script>
+        function w() {
+            alert("Welcome User");
+            res = confirm("Do you want to continue");
+            if (res) {
+                var name = prompt("Enter user name ");
+                alert("Hello " + name);
+
+                var age = prompt("Enter user age ");
+
+                if (age >= 18) {
+                    alert("You are an adult!");
+                }
+                else {
+                    alert("You are a minor!");
+                }
+            }
+            else {
+                document.write("Goodbye");
+                return false;
+            }
+        }
+        w();
+    </script> -->
+
+
+    <!-- 564) Create a function registerUser() that uses pop-up boxes to gather and validate user input for a 
+new user registration.
+The function should:
+1. Use a while loop to repeatedly prompt the user for a username using the prompt() pop-up box. 
+The loop should continue to run as long as the user's input is an empty string, null, or undefined.
+2. Once a valid username is provided, use another while loop to prompt the user for a password. 
+This loop should continue until the user provides a password that is at least 8 characters long.
+3. After a valid password is entered, use the confirm() pop-up box to ask the user, "Are you sure 
+you want to register with this username and password?".
+4. If the user clicks "Cancel" on the confirmation box, use alert() to display a message 
+"Registration canceled." and end the function.
+5. If the user clicks "OK", use a template literal to display a final alert() message confirming the 
+successful registration, showing both the username and the password. -->
+
+    <script>
+        function registerUser() {
+            let name = '';
+            while (name === '' || name === 'null' || name === 'undefined') {
+                name = prompt("Enter user name ");
+            }
+
+            let pass = '';
+            while (pass.length < 8) {
+                pass = prompt("Enter password");
+            }
+
+            var res = confirm("Are you sure you want to register with this username and password?");
+            if (res) {
+                alert(`successful registration
+                    username : ${name}
+                    password : ${pass}`);
+            }
+            else {
+                alert("Registration canceled.");
+                return false;
+            }
+        }
+        registerUser();
+    </script>
+</head>
+
+<body>
+    <!-- <input type="button" onclick="warn()" value="click here">
+    <input type="button" onclick="conf()" value="click here">
+    <input type="button" onclick="getval()" value="click here"> -->
+</body>
+
+</html>

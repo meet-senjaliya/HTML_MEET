@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- normal -->
+    <!-- <script>
+        let message = "Hello";
+        let name =  "abc";
+        let text = "Hello" + name;
+        let a = 5;
+        let b = 3;
+        let result = "sum is" + (a+b);
+    </script> -->
+
+
+    <!-- TL -->
+    <!-- <script>
+        let message = `Hello`;
+        let name =  `abc`;
+        let text = `Hello ${name}`;
+        let a = 5;
+        let b = 3;
+        let result = `sum is ${a+b}`;
+        console.log(result);
+    </script> -->
+
+
+    <!-- <script>
+        // function name = (param1,param2,..) => expression
+        // 1)
+        const add = (a,b) => a + b;
+        console.log(add(2,5));
+
+
+        // 2)
+        const square = x => x*x;
+        console.log(square(2));
+
+
+        // 3)
+        const sayhello = () => "Hello";
+        console.log(sayhello());
+
+
+        // 4)
+        const multiply = (a,b) => {
+            const result = a*b;
+            return result;
+        }
+        console.log(multiply(2,3));
+
+
+        // 5)
+        const newfun = p => `val = ${p}`;
+        console.log(newfun(10));
+
+
+        
+    </script> -->
+
+
+
+    <!-- <script>
+        // Rest Parameter
+        // 1)
+        function num(a,b,...c)
+        {
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        num(10,20,30,40,50)
+
+
+        // 2)
+        function fun(...args)
+        {
+            console.log(args);
+        }
+        fun(1,2,3,4,5)
+
+
+        // 3)
+        function example(a,b,...c)
+        {
+            console.log(`${a} ${b}`);
+            console.log(c);
+            console.log(c[0]);
+            console.log(c.length);
+            console.log(c.indexOf("PQR"));
+            console.log(c.indexOf("ABC"));
+        }
+        example('ABC','XYZ','PQR','MNO','STU');
+    </script> -->
+
+
+    <!-- <script>
+        // Spread operator
+        arr1 = [50,40,30];
+        arr2 = [10,20];
+        let arr_test = [arr1,arr2];
+        console.log(arr_test);
+
+        let arr = [...arr1,...arr2];
+        console.log(arr);
+
+        console.log(arr);
+        console.log(...arr);
+        console.log(Math.min(arr));
+        console.log(Math.min(...arr));
+        console.log(`${arr.sort()}`);
+    </script> -->
+
+
+
+    <script>
+        // Default Parameter
+
+        // function multiply(a,b)
+        // {
+        //     return a*b;
+        // }
+        // let num1 = multiply(5);
+        // console.log(num1);
+        // let num2 = multiply(5,8);
+        // console.log(num2);
+
+
+        // function multiply(a,b=2)
+        // {
+        //     return a*b;
+        // }
+        // let num1 = multiply(5);
+        // console.log(num1);
+        // let num2 = multiply(5,8);
+        // console.log(num2);
+
+        function multiply(a=2,b)
+        {
+            return a*b;
+        }
+        let num1 = multiply(5);
+        console.log(num1);
+        let num2 = multiply(5,8);
+        console.log(num2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

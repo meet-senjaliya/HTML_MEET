@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- waf to be called on button click .take one division with some texet and no decoration intially.take font sizen and style as default argument and pass background color andtext color while passing argument to function. style should change on button click -->
+</head>
+<body>
+    <div id="d1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, voluptatem?
+    </div>
+    <button onclick="fun('red','white')">click</button>
+
+    <script>
+        function fun(bg,tx,size="50px",fs="italic")
+        {
+            i = document.getElementById("d1");
+            i.style.backgroundColor = bg;
+            i.style.color = tx;
+            i.style.fontSize = size;
+            i.style.fontStyle = fs;
+        }
+    </script>
+</body>
+</html>

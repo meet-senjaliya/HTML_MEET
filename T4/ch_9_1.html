@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // 1) document object
+        document.write("DPM");
+    </script>
+</head>
+
+<body>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, itaque?</p>
+
+    <p class="c1">para1</p>
+    <p class="c1">para2</p>
+
+    <p>para</p>
+
+    <h1>heading</h1>
+    <h1>heading</h1>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <img id="img1">
+
+    <p id="px" title="demo title">Hello</p>
+
+    <h1 id="head" title="my heading">Hello......</h1>
+    <script>
+        // 2) getElementById()
+        document.getElementById("p1").innerHTML = "Hello world";
+
+        // 3) getElementsByClassName()
+        var x = document.getElementsByClassName("c1");
+        for (var i = 0; i < x.length; i++) {
+            x[i].innerHTML = "changed text";
+        }
+
+        // 4) QuerySelector()
+        document.querySelector("p").style.color = "red";  // tag name ("p") / id("#i1") / class("c1") / combinators(div p)
+
+
+        // 5) querySelectorAll()
+        var y = document.querySelectorAll("h1");
+        for(var i=0;i<y.length;i++)
+        {
+            y[i].style.backgroundColor = "pink"
+        }
+
+        for(let p of document.querySelectorAll("h1"))
+        {
+            p.style.fontStyle = "italic"
+        }
+
+        // 6) innerHTML()
+        document.getElementById("demo1").innerHTML = "<b>Hello</b>";
+
+        // 7)innerText
+        document.getElementById("demo2").innerText = "<b>Hello</b>";
+
+        // 8) setSttribute()
+        document.getElementById("img1").setAttribute("src","download.jfif");
+
+        // 9) getAtttribute()
+        alert(document.getElementById("px").getAttribute("title"));
+
+        // 10) removeAttribute()
+        document.getElementById("head").removeAttribute("title");
+        alert(document.getElementById("head").getAttribute("title"));
+    </script>
+</body>
+
+</html>

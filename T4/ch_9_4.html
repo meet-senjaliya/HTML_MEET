@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        Mouse events
+        - onclick
+        - onmouseup
+        - onmousedown
+        - onmouseover
+        - onmouseover
+        - onmouseout
+
+        Key events
+        - onkeypress
+        - onkeyup
+        - onkeydown
+
+        Form Events
+        - onfocus (when field gets focus)
+        - oninput (immediately when value changes)
+        - onblur (when field loses focus)
+        - onchange (when value changes and focus is lost)
+        - onsubmit (when value changes and focus is lost)
+    </script> -->
+
+    <!-- <script>
+        function keycheck(e) {
+            alert("key pressed" + e.key)
+        }
+    </script> -->
+
+    <script>
+        function fun2(e)
+        {
+            c = e.key;
+            if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'|| c=='U')
+        {
+            document.write("vowel is pressed "+e.keyCode + " "+e.key);
+        }
+        else
+        {
+            document.write(e.keyCode +" "+ e.key);
+        }
+        }
+
+        function color(e)
+        {
+            e.style.backgraundColor = "red";
+        }
+    </script>
+</head>
+
+<body onkeypress="fun2(event)" onkeyup="color(event)">
+<!-- <body onkeypress="keycheck(event)"> -->
+    <!-- <form action="#" onsubmit="myfunction()">
+        Enter Name:<input type="text" id="fname">
+        <input type="submit">
+    </form>
+    <script>
+        function myfunction()
+        {
+            a = document.getElementById("fname").value;
+            alert("welcome "+a)
+        }
+    </script> -->
+
+
+    <!-- write html and js to perform following task 
+    1. add three input text field 
+    2. In th first text field convert the entered text into upper case when the value of the field is changed using the onchange event
+    3. In the 2nd text field change the background color to yellow when the field gets focus using the onfocus event change text color to blue while typing using the oninput event
+    4. In the third text field convert the entered text into lower case when the field lossess focus 
+
+    <script>
+        function uppercase()
+        {
+            var a = document.getElementById("name1");
+            a.value = a.value.toUpperCase();
+        }
+
+        function lowercase(a)
+        {
+            a.value = a.value.toLowerCase();
+        }
+
+        function inputtxt(x)
+        {
+            x.style.color = "blue";
+        }
+
+    </script>
+    <input type="text" value="hello1" id="name1" onchange="uppercase()">
+    <input type="text" value="hello2" id="name2" onfocus="this.style.backgroundColor = 'yellow'" oninput="inputtxt(this)" onblur="this.style.backgroundColor = 'transparent'">
+    <input type="text" value="HELLO3" id="name2" onblur="lowercase(this)"> -->
+
+
+
+
+    <!-- Event Object -->
+    <!-- 1) event.target (Identify an element)
+    <select onchange="show(event)">
+        <option value="red">RED</option>
+        <option value="blue">Blue</option>
+    </select>
+    <script>
+        function show(e) {
+            alert(e.target.value);
+        }
+    </script> -->
+
+    <!-- 2) event.type (tells which event occured) -->
+    <!-- <button onclick="check(event)">click here</button>
+    <script>
+        function check(e)
+        {
+            alert(e.type);
+        }
+    </script> -->
+
+    <!-- 3) event.key (key,unicode) -->
+    <!-- <body onkeypress="keycheck(event)"></body>
+    <script>
+        function keycheck(e)
+        {
+            alert("key pressed + e.key")
+        }
+    </script> -->
+
+    <!-- 4) event.preventDefault() (stops default browser action) -->
+    <!-- <form onsubmit="stop(event)">
+        <input type="submit">
+    </form>
+    <script>
+        function stop(e)
+        {
+            e.preventDefault();
+            alert("Form submision stop")
+        }
+    </script> -->
+
+    <!-- element.addEventListener("click/mousedown/mouseup/mouseover/mouseout/keydown/keymap/keypress",function) -->
+    <!-- <button id="btn">click here</button>
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            alert("button clicked");
+        });
+    </script> -->
+
+    <!-- Write js to handle following key events 
+    1. bg color should change red after relesing the pressed key 
+    2. give key code for the key pressed  
+    3. script should give message 'vowel is pressed' on pressing vowel key-->
+    <!-- <script>
+        function fun2(e)
+        {
+            c = e.key;
+            if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'|| c=='U')
+        {
+            document.write("vowel is pressed "+e.keyCode + " "+e.key);
+        }
+        else
+        {
+            document.write(e.keyCode +" "+ e.key);
+        }
+        }
+    </script>
+    <body onkeypress = "fun2(event)></body>"-->
+</body>
+
+</html>

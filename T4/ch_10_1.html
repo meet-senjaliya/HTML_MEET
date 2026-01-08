@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1) var obj = document.forms["form_name"]["element_name"].value;
+        // 2) var obj = document.form_name.element_name.value;
+        // 3) var obj = document.getElementById("i1").value;
+
+        function fun()
+        {
+            obj = document.forms['f1']['t1'].value;
+            obj = document.f1.t1.value;
+            obj = document.getElementById("i1").value;
+            alert(obj);
+        }
+    </script>
+</head>
+<body>
+    <form name="f1" onsubmit="fun()">
+        <input type="text" name="t1" id="i1">
+        <input type="submit">
+    </form>
+</body>
+</html>

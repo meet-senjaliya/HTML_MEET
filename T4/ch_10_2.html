@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--1) <script>
+        function fun()
+        {
+            obj = document.forms["f2"];
+            alert(obj.length);
+        }
+    </script> -->
+
+    <script>
+        function fun() {
+            obj = document.forms['f2']['t1'].value;
+            if (obj.length == 0) {
+                alert("enter something")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 1) <form name="f2" onsubmit="fun()">
+        UserName : <input type="text">
+        <br>
+        Password : <input type="password">
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form> -->
+
+    <!-- alert will pop up with text enter something if input feild is empty on cliking submit button otherwise it will print entered value  -->
+    <form name="f2" onsubmit="fun()">
+        <input type="text" name="t1">
+        <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

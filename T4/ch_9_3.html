@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        function down()
+        {
+            document.getElementById("test").innerHTML = "Mouse down";
+        }
+
+        // 2) function call with "this" as a parameter
+        function up(x)
+        {
+            x.innerHTML = "mouse up";
+        }
+    </script> -->
+    <!-- <p onmousedown="down()" id="test">click to check</p> -->
+    <!-- <p onmouseup="up(this)">click to check</p> -->
+
+    <!-- 3) Inline Javascript -->
+    <!-- <p onmouseover="this.style.color = 'red'; this.innerHTML = 'Hover effect';">Text here</p>  -->
+
+    <!-- <h2 onclick="alert(this.innerHTML)">Hello</h2> -->
+
+    <!-- <div onmousedown="mdown(this)" onmouseup="mup(this)" style="background-color: black;color: red; width: 70px; height: 30px; padding: 20px;">click here</div>
+    <script>
+        function mdown(e)
+        {
+            e.style.backgroundColor = "yellow";
+            e.innerHTML = "press";
+        }
+        function mup(e)
+        {
+            e.style.backgroundColor = "gold";
+            e.innerHTML = "release";
+        }
+    </script> -->
+
+    <!-- <div onmouseover="min(this)" onmouseout="mout(this)" style="background-color: black;color: red; width: 70px; height: 30px; padding: 20px;">click here</div>
+    <script>
+        function min(e)
+        {
+            e.style.backgroundColor = "lightgreen";
+            e.innerHTML = "mouse";
+        }
+        function mout(e)
+        {
+            e.style.backgroundColor = "lightblue";
+            e.innerHTML = "release";
+        }
+    </script> -->
+
+
+    <!-- write js to handle folowing mouse event 
+     1. if mouse is over heading it should turn yellow if mouse goes out it should turn green
+     2. if button named red is clicked then bg color should run RED and button named green is clicked then bgcolor should be GREEN
+     3. if findtime button is clicked then show date and time information-->
+
+    <h1 onmouseover="min(this)" onmouseout="mout(this)" >This is a heading</h1>
+    <button onclick="bg(this)">RED</button>
+    <script>
+        function min(e)
+        {
+            e.style.backgroundColor = "yellow";
+        }
+        function mout(e)
+        {
+            e.style.backgroundColor = "green";
+        }
+        function bg(e)
+        {
+            e.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        function fun() {
+            // 1) pat = /abc/    abc together
+            // 2) pat = /[abc]/  abc in any position
+            // 3) pat = /[^acb]/ not abc together
+            // 4) pat = /[A-Z]/  one capital letter from A to Z
+            // 5) pat = /[^A-Z]/ Capital letter not alone
+            // 6) pat = /[a-z]/  not only capital letter
+            // 7) pat = /[^a-z]/ not only small letter
+            // 8) pat = /[0-9]/  not only letters
+            // 9) pat = /[^0-9]/ not only number
+            // 10) pat = /(x|y)/  x or y
+            // 11) pat = /^A/    starts with A 
+            // 11) pat = /^A/i   starts with A  i=ignor case
+            // 12) pat = /Bo*/   B is mandatory and o 0 or more times
+            // 13) pat = /t$/    must ends with t
+            // \d = [0-9]
+            // \D = [^0-9]
+            // \w = [A-Za-z0-9_] or [A-z0-9_]
+            // \W = [^A-Za-z0-9_]
+            // 14) pat = /^\d{10}$/  10 digits
+            // 15) pat = pat = /^[A-Za-z]+$/ +=one or more
+
+            pat = /^[A-Za-z]+$/; 
+            u = document.getElementById("t1").value;
+            if (pat.test(u)) {
+                alert("Perfect");
+            }
+            else {
+                alert("Not Perfect");
+            }
+        }
+    </script> -->
+
+    <!-- <script>
+        function fun() {
+            pat = /^(_|@|\d)/;
+            u = document.getElementById("t1").value;
+            p = document.getElementById("t2").value;
+            if (u === "" || p === "") {
+                alert("both must not be blank")
+            }
+            else if (pat.test(u)) {
+                alert("should not start with @, _ or digit");
+            }
+            else if(p.length<6 || p.length>12){
+                alert("length must be of 6 to 12");
+            }
+            else
+            {
+                alert("welcome user")
+            }
+        }
+    </script> -->
+
+
+    <script>
+        function fun() {
+            pat = /\W+/;
+            p = document.getElementById("t2").value;
+            if (pat.test(p) && p.length==8) {
+                alert("welcome");
+            }
+            else if(p.length!=8)
+            {
+                alert("Pass must be 8 letters")
+            }
+            else
+            {
+                alert("must have at least one special char")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <form action="">
+        <input type="text" id="t1">
+        <input type="submit" onclick="fun()">
+    </form> -->
+
+    <!-- write js to validate username and password username should not start with _,@ or any digit password length must be of 6 ot 12 char both must not be blank-->
+    <!-- <form>
+        <input type="text" id="t1">
+        <input type="password" id="t2">
+        <input type="submit" onclick="fun()">
+    </form> -->
+
+    <!-- write js to validate password field :
+    min length of pass must be of 8 letters and must have some special charecters -->
+    <form>
+        <input type="password" id="t2">
+        <input type="submit" onclick="fun()">
+    </form>
+</body>
+
+</html>

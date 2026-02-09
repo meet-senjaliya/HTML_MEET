@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div>
+        When controlling the flow of text, using the CSS property
+        <p class="inline h-24 bg-red-200">display: inline</p>
+        will cause the text inside the element to wrap normally.
+    </div>
+    <div>
+        While using the property
+        <p class="inline-block h-24 bg-yellow-200">display: inline-block</p>
+        will wrap the element to prevent the text inside from extending beyond its parent.
+    </div>
+    <div>
+        Lastly, using the property
+        <span class="block">display: block</span>
+        will put the element on its own line and fill its parent.
+    </div>
+
+
+    <div class="m-4 p-4 bg-blue-100 h-auto w-1/2 shadow-2xl">
+        <img src="IF.jpg" class="float-right px-4 w-48 h-24">
+        <p class="text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et perferendisnesciunt veniam
+            explicabo atque quidem eligendi a fugiat officiis porro autem, saepe animisapiente omnis quasi reprehenderit
+            quis. Consequuntur, minus.</p>
+    </div>
+
+    <div class="flex p-3 bg-blue-300 text-white">
+        <div class="p-2 bg-red-400">Flex item 1</div>
+        <div class="p-2 bg-yellow-400">Flex item 2</div>
+        <div class="p-2 bg-green-300">Flex item 3</div>
+    </div>
+    <br>
+    <div class="inline-flex p-3 bg-blue-300 text-white">
+        <div class="p-2 bg-red-400">Flex item 1</div>
+        <div class="p-2 bg-yellow-400">Flex item 2</div>
+        <div class="p-2 bg-green-300">Flex item 3</div>
+    </div>
+    <br>
+    <div class="flex flex-row p-3 bg-blue-300 text-white">
+        <div class="p-2 bg-red-400">Flex item 1</div>
+        <div class="p-2 bg-yellow-400">Flex item 2</div>
+        <div class="p-2 bg-green-300">Flex item 3</div>
+    </div>
+    <br>
+    <div class="flex flex-row-reverse p-3 bg-blue-300 text-white">
+        <div class="p-2 bg-red-400">Flex item 1</div>
+        <div class="p-2 bg-yellow-400">Flex item 2</div>
+        <div class="p-2 bg-green-300">Flex item 3</div>
+    </div>
+
+    <div class="m-4 inline-flex flex-col bg-black p-4">
+        <div class="p-2 bg-red-400">Flex item 1</div>
+        <div class="p-2 bg-yellow-400">Flex item 2</div>
+        <div class="p-2 bg-green-300">Flex item 3</div>
+    </div>
+
+    <div class="inline-flex flex-col-reverse bg-black p-4">
+        <div class="p-2 bg-red-400">Flex item 1</div>
+        <div class="p-2 bg-yellow-400">Flex item 2</div>
+        <div class="p-2 bg-green-300">Flex item 3</div>
+    </div>
+
+    <div class="m-24 flex flex-wrap bg-green-200 p-4 text-center text-lg">
+        <div class="bg-green-900 w-24 h-12">1</div>
+        <div class="bg-green-800 w-24 h-12">2</div>
+        <div class="bg-green-700 w-24 h-12">3</div>
+        <div class="bg-green-600 w-24 h-12">4</div>
+        <div class="bg-green-500 w-24 h-12">5</div>
+        <div class="bg-green-400 w-24 h-12">6</div>
+    </div>
+</body>
+
+</html>
